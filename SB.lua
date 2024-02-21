@@ -4,6 +4,45 @@ end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
 local main = libary:CreateWindow("STS")
 
+local mod = main:Button("Slot001", function()
+_G.Slot001_enabled = not _G.Slot001_enabled
+
+while _G.Slot001_enabled do
+local args = {
+    [1] = "Slot001"
+}
+
+game:GetService("ReplicatedStorage").Events.Stats.ClaimSlot:InvokeServer(unpack(args))
+wait(10)
+end
+end)
+
+local mod = main:Button("Slot002", function()
+_G.Slot002_enabled = not _G.Slot002_enabled
+
+while _G.Slot002_enabled do
+local args = {
+    [1] = "Slot002"
+}
+
+game:GetService("ReplicatedStorage").Events.Stats.ClaimSlot:InvokeServer(unpack(args))
+wait(10)
+end
+end)
+
+local mod = main:Button("Slot003", function()
+_G.Slot003_enabled = not _G.Slot003_enabled
+
+while _G.Slot003_enabled do
+local args = {
+    [1] = "Slot003"
+}
+
+game:GetService("ReplicatedStorage").Events.Stats.ClaimSlot:InvokeServer(unpack(args))
+wait(10)
+end
+end)
+
 local mod = main:Button("ClickDamage", function()
 _G.ClickDamage_enabled = not _G.ClickDamage_enabled
 
