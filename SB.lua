@@ -21,6 +21,38 @@ wait(0.1)
 end
 end)
 
+local mod = main:Button("Draw002", function()
+_G.Draw002_enabled = not _G.Draw002_enabled
+
+while _G.Draw002_enabled do
+local args = {
+    [1] = "Hatch",
+    [2] = "Draw002",
+    [3] = {}
+}
+
+game:GetService("ReplicatedStorage").Events.Pets.Re_Draw:FireServer(unpack(args))
+
+wait(0.1)
+end
+end)
+
+local mod = main:Button("Draw003", function()
+_G.Draw003_enabled = not _G.Draw003_enabled
+
+while _G.Draw003_enabled do
+local args = {
+    [1] = "Hatch",
+    [2] = "Draw003",
+    [3] = {}
+}
+
+game:GetService("ReplicatedStorage").Events.Pets.Re_Draw:FireServer(unpack(args))
+
+wait(0.1)
+end
+end)
+
 local mod = main:Button("HeroAttack", function()
 _G.HeroAttack_enabled = not _G.HeroAttack_enabled
 
