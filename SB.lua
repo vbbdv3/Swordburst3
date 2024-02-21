@@ -65,7 +65,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").Events.Hero.HeroAttack:FireServer(unpack(args))
 
-wait(0.1)
+wait(0.01)
 end
 end)
 
