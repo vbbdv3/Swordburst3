@@ -2,7 +2,7 @@ while not game:IsLoaded() do
     wait()
 end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
-local main = libary:CreateWindow("STS")
+local main = libary:CreateWindow("RNG Legends [IN-DEV]")
 
 local mod = main:Button("RollEvent", function()
 _G.RollEvent_enabled = not _G.RollEvent_enabled
