@@ -119,6 +119,13 @@ game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
 wait()
 game:GetService("ReplicatedStorage").remotes.dash:FireServer()
 wait()
+local args = {
+    [1] = "createQuest",
+    [2] = "King Of The Jungle"
+}
+
+game:GetService("ReplicatedStorage").remotes.quest:FireServer(unpack(args))
+wait()
     end
   end)
 
