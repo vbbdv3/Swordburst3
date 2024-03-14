@@ -37,13 +37,15 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)local args = {
+wait(0.1)
+local args = {
     [1] = "ability",
     [2] = "c"
 }
 
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)local args = {
+wait(0.1)
+local args = {
     [1] = "ability",
     [2] = "v"
 }
@@ -91,6 +93,34 @@ wait(60)
     end
   end)
 
+local mod = main:Button("GOD MOD FIRE", function()
+_G.dashf_enabled = not _G.dashf_enabled
+while _G.dashf_enabled do
+local args = {
+    [1] = "ability",
+    [2] = "x"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait()
+local args = {
+    [1] = "ability",
+    [2] = "c"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait()
+local args = {
+    [1] = "ability",
+    [2] = "v"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait()
+game:GetService("ReplicatedStorage").remotes.dash:FireServer()
+wait()
+    end
+  end)
 
 local mod = main:Button("GOD MOD", function()
 _G.dash_enabled = not _G.dash_enabled
