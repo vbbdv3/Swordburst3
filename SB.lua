@@ -14,7 +14,10 @@ game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
 end)
 
 local mod = main:Button("Anchored", function()
+_G.Anchor_enabled = not _G.Anchor_enabled
+while _G.Anchor_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+        end
 end)
 
 local mod = main:Button("ability", function()
