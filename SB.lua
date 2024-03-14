@@ -83,6 +83,6 @@ local mod = main:Button("Destr", function()
 _G.Destr_enabled = not _G.Destr_enabled
 while _G.Destr_enabled do
         game.Players.LocalPlayer.Character.Torso:Destroy()
-wait(20)
+wait(60)
     end
   end)
