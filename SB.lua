@@ -102,14 +102,16 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)
+wait()
 local args = {
     [1] = "ability",
     [2] = "v"
 }
 
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)
+wait()
+game:GetService("ReplicatedStorage").remotes.dash:FireServer()
+wait()
     end
   end)
 
