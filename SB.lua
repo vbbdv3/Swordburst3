@@ -17,6 +17,7 @@ local mod = main:Button("Anchored", function()
 _G.Anchor_enabled = not _G.Anchor_enabled
 while _G.Anchor_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+        wait(5)
         end
 end)
 
