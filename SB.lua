@@ -102,30 +102,28 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait()
+wait(0.1)
 local args = {
     [1] = "ability",
     [2] = "c"
 }
 
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait()
+wait(0.1)
 local args = {
     [1] = "ability",
     [2] = "v"
 }
 
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait()
-game:GetService("ReplicatedStorage").remotes.dash:FireServer()
-wait()
+wait(0.1)
 local args = {
     [1] = "createQuest",
     [2] = "King Of The Jungle"
 }
 
 game:GetService("ReplicatedStorage").remotes.quest:FireServer(unpack(args))
-wait()
+wait(0.1)
     end
   end)
 
@@ -133,6 +131,6 @@ local mod = main:Button("GOD MOD", function()
 _G.dash_enabled = not _G.dash_enabled
 while _G.dash_enabled do
 game:GetService("ReplicatedStorage").remotes.dash:FireServer()
-wait()
+wait(0.1)
     end
   end)
