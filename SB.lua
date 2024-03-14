@@ -93,6 +93,26 @@ wait(60)
     end
   end)
 
+local mod = main:Button("abilityf", function()
+_G.abilityf_enabled = not _G.abilityf_enabled
+while _G.abilityf_enabled do
+local args = {
+    [1] = "ability",
+    [2] = "c"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "ability",
+    [2] = "v"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+    end
+  end)
+
 local mod = main:Button("foresight", function()
 _G.dashf_enabled = not _G.dashf_enabled
 while _G.dashf_enabled do
