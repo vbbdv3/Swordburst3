@@ -155,13 +155,13 @@ local mod = main:Button("GOD MOD3", function()
 _G.dash_enabled = not _G.dash_enabled
 while _G.dash_enabled do
 game:GetService("ReplicatedStorage").remotes.dash:FireServer()
-wait()
+wait(0.1)
 local args = {
     [1] = "M1"
 }
 
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)
+wait()
     end
   end)
 
