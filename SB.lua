@@ -93,7 +93,7 @@ wait(60)
     end
   end)
 
-local mod = main:Button("GOD MOD FIRE", function()
+local mod = main:Button("MOD FIRE", function()
 _G.dashf_enabled = not _G.dashf_enabled
 while _G.dashf_enabled do
 local args = {
@@ -135,10 +135,19 @@ wait(0.1)
     end
   end)
 
-local mod = main:Button("GOD MOD", function()
+local mod = main:Button("GOD MOD1", function()
 _G.dash_enabled = not _G.dash_enabled
 while _G.dash_enabled do
 game:GetService("ReplicatedStorage").remotes.dash:FireServer()
 wait(0.1)
     end
   end)
+
+local mod = main:Button("GOD MOD2", function()
+_G.dash_enabled = not _G.dash_enabled
+while _G.dash_enabled do
+game:GetService("ReplicatedStorage").remotes.dash:FireServer()
+wait()
+    end
+  end)
+
