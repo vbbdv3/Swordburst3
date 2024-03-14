@@ -17,7 +17,7 @@ local mod = main:Button("Anchored", function()
 _G.Anchor_enabled = not _G.Anchor_enabled
 while _G.Anchor_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-        wait(5)
+        wait(1)
         end
 end)
 
@@ -88,5 +88,14 @@ _G.Destr_enabled = not _G.Destr_enabled
 while _G.Destr_enabled do
         game.Players.LocalPlayer.Character.Torso:Destroy()
 wait(60)
+    end
+  end)
+
+
+local mod = main:Button("GOD MOD", function()
+_G.dash_enabled = not _G.dash_enabled
+while _G.dash_enabled do
+game:GetService("ReplicatedStorage").remotes.dash:FireServer()
+wait()
     end
   end)
