@@ -14,11 +14,19 @@ game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
 end)
 
 local mod = main:Button("TP GUY 1", function()
+_G.TPt_enabled = not _G.TPt_enabled
+while _G.TPt_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
+  wait(0.1)
+      end
 end)
 
 local mod = main:Button("TP GUY 2", function()
+_G.TPd_enabled = not _G.TPd_enabled
+while _G.TPd_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 200.074066162109375, 934.8900146484375)
+wait(0.1)
+      end
 end)
 
 local mod = main:Button("Anchored", function()
