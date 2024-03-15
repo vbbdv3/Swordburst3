@@ -13,6 +13,14 @@ game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
 
 end)
 
+local mod = main:Button("TP GUY 1", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 30.074066162109375, 934.8900146484375)
+end)
+
+local mod = main:Button("TP GUY 2", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
+end)
+
 local mod = main:Button("Anchored", function()
 _G.Anchor_enabled = not _G.Anchor_enabled
 while _G.Anchor_enabled do
