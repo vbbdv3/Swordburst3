@@ -32,7 +32,7 @@ end)
 local mod = main:Button("TP GUY 3", function()
 _G.TPt_enabled = not _G.TPt_enabled
 while _G.TPt_enabled do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 10, 934.8900146484375)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 20, 934.8900146484375)
   wait(0.1)
       end
 end)
@@ -44,6 +44,20 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
         wait(1)
         end
 end)
+
+local mod = main:Button("Z", function()
+_G.htingStyl_enabled = not _G.htingStyl_enabled
+while _G.htingStyl_enabled do
+local args = {
+    [1] = "fightingStyle",
+    [2] = "skill 1"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+        end
+    end)
+
 
 local mod = main:Button("ability", function()
 _G.ability_enabled = not _G.ability_enabled
