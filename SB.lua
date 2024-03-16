@@ -32,7 +32,7 @@ end)
 local mod = main:Button("TP GUY 3", function()
 _G.TPt_enabled = not _G.TPt_enabled
 while _G.TPt_enabled do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 20.074066162109375, 934.8900146484375)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 10, 934.8900146484375)
   wait(0.1)
       end
 end)
