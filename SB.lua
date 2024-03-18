@@ -82,6 +82,15 @@ wait(0.1)
       end
 end)
 
+local mod = main:Button("TEST", function()
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 1000.074066162109375, 934.8900146484375)
+  wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 30.074066162109375, 934.8900146484375)
+end)
+
 local mod = main:Button("TANK", function()
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
