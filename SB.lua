@@ -13,6 +13,18 @@ wait(0.1)
       end
 end)
 
+local mod = main:Button("Claim end reward", function()
+_G.claimbuyc_enabled = not _G.claimbuyc_enabled
+while _G.claimbuyc_enabled do
+local args = {
+    [1] = "claim"
+}
+
+game:GetService("ReplicatedStorage").remotes.reward:FireServer(unpack(args))
+wait(1)
+      end
+end)
+
 local mod = main:Button("Cursed Chest", function()
 _G.Chestbuyc_enabled = not _G.Chestbuyc_enabled
 while _G.Chestbuyc_enabled do
