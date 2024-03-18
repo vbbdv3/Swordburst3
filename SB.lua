@@ -1,5 +1,5 @@
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
-local main = libary:CreateWindow("GojohUnsealed")
+local main = libary:CreateWindow("DUNGEON")
 
 local mod = main:Button("BUY CHEST", function()
 _G.Chestbuy_enabled = not _G.Chestbuy_enabled
