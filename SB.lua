@@ -51,6 +51,25 @@ wait(0.1)
       end
 end)
 
+local mod = main:Button("Disaster Chest", function()
+_G.Chestbuyd_enabled = not _G.Chestbuyd_enabled
+while _G.Chestbuyd_enabled do
+local args = {
+    [1] = "equipItem",
+    [2] = {
+        ["description"] = "Holds a mysterious item.",
+        ["amount"] = 5,
+        ["name"] = "Disaster Chest",
+        ["rarity"] = "Epic",
+        ["itemType"] = "chest",
+        ["equippable"] = "Open"
+    }
+}
+game:GetService("ReplicatedStorage").remotes.inventory:FireServer(unpack(args))
+wait(0.1)
+      end
+end)
+
 local mod = main:Button("TANK", function()
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
