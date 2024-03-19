@@ -86,11 +86,13 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
  wait(0.1)
 end)
 
-local mod = main:Button("FREEZING", function()
+local mod = main:Button("ANTY AFK", function()
 _G.Anchor_enabled = not _G.Anchor_enabled
 while _G.Anchor_enabled do
-game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
         wait(1)
+game:GetService("ReplicatedStorage").remotes.dash:FireServer()
+wait(1)
         end
 end)
 
