@@ -77,27 +77,29 @@ new_part.Size = Vector3.new(4, 1, 4)
 new_part.CFrame = CFrame.new(your_position)
 new_part.Anchored = true
 new_part.Name = 'newANK'
-    end)
-local mod = main:Button("PDPS", function()
+wait(1)
 local your_position = Vector3.new(1581.916748046875, 190.074066162109375, 934.8900146484375)
 local new_part = Instance.new('Part', workspace)
 new_part.Size = Vector3.new(4, 1, 4)
 new_part.CFrame = CFrame.new(your_position)
 new_part.Anchored = true
 new_part.Name = 'newDMG'
+wait(1)
+local your_position = Vector3.new(1581.916748046875, 790.074066162109375, 934.8900146484375)
+local new_part = Instance.new('Part', workspace)
+new_part.Size = Vector3.new(4, 1, 4)
+new_part.CFrame = CFrame.new(your_position)
+new_part.Anchored = true
+new_part.Name = 'newsafe'
     end)
 
 local mod = main:Button("TANK", function()
 _G.ATANK_enabled = not _G.ATANK_enabled
 while _G.ATANK_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
+               wait(59)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 800.074066162109375, 934.8900146484375)
                wait(1)
-game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(1581.916748046875, 100.074066162109375, 933.8900146484375))
-               wait(1)
-game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(1581.916748046875, 100.074066162109375, 935.8900146484375))
-               wait(1)
-game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(1580.916748046875, 100.074066162109375, 934.8900146484375))
-wait(1)
 end
 end)
 
@@ -105,13 +107,9 @@ local mod = main:Button("DPS", function()
 _G.ADPS_enabled = not _G.ADPS_enabled
 while _G.ADPS_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 200.074066162109375, 934.8900146484375)
+       wait(59)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 800.074066162109375, 934.8900146484375)
        wait(1)
-game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(1581.916748046875, 200.074066162109375, 935.8900146484375))
-wait(1)
-game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(1581.916748046875, 200.074066162109375, 933.8900146484375))
-wait(1)
-game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(1580.916748046875, 200.074066162109375, 933.8900146484375))
-wait(1)
  end
 end)
 
