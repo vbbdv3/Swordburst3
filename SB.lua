@@ -91,10 +91,17 @@ new_part.Size = Vector3.new(4, 1, 4)
 new_part.CFrame = CFrame.new(your_position)
 new_part.Anchored = true
 new_part.Name = 'newsafe'
+wait(1)
+local your_position = Vector3.new(1581.916748046875, 30.074066162109375, 934.8900146484375)
+local new_part = Instance.new('Part', workspace)
+new_part.Size = Vector3.new(4, 1, 4)
+new_part.CFrame = CFrame.new(your_position)
+new_part.Anchored = true
+new_part.Name = 'newsafet'
     end)
 
 local mod = main:Button("AIM", function()
-local part = workspace.newDMG
+local part = workspace.newsafet
 local camera = workspace.CurrentCamera
 while true do
     camera.CFrame = CFrame.new(camera.CFrame.Position, part.Position)
