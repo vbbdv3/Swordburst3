@@ -93,6 +93,15 @@ new_part.Anchored = true
 new_part.Name = 'newsafe'
     end)
 
+local mod = main:Button("AIM", function()
+local part = workspace.newDMG
+local camera = workspace.CurrentCamera
+while true do
+    camera.CFrame = CFrame.new(camera.CFrame.Position, part.Position)
+    task.wait()
+end
+    end)
+
 local mod = main:Button("TANK", function()
 _G.ATANK_enabled = not _G.ATANK_enabled
 while _G.ATANK_enabled do
@@ -158,11 +167,39 @@ end
 end)
 
 
-local mod = main:Button("AUTO RESET 60s", function()
-_G.Destr_enabled = not _G.Destr_enabled
-while _G.Destr_enabled do
+local mod = main:Button("TANK RESET", function()
+_G.Destrt_enabled = not _G.Destrt_enabled
+while _G.Destrt_enabled do
+wait(300)
         game.Players.LocalPlayer.Character.Torso:Destroy()
 wait(60)
+    end
+  end)
+
+local mod = main:Button("DMG 1 RESET", function()
+_G.Destrdd_enabled = not _G.Destrdd_enabled
+while _G.Destrdd_enabled do
+wait(240)
+        game.Players.LocalPlayer.Character.Torso:Destroy()
+wait(120)
+    end
+  end)
+
+local mod = main:Button("TANK 2 RESET", function()
+_G.Destrddd_enabled = not _G.Destrddd_enabled
+while _G.Destrddd_enabled do
+wait(180)
+        game.Players.LocalPlayer.Character.Torso:Destroy()
+wait(180)
+    end
+  end)
+
+local mod = main:Button("DMG 3 RESET", function()
+_G.Destrdddd_enabled = not _G.Destrdddd_enabled
+while _G.Destrdddd_enabled do
+wait(60)
+        game.Players.LocalPlayer.Character.Torso:Destroy()
+wait(300)
     end
   end)
 
