@@ -100,22 +100,13 @@ new_part.Anchored = true
 new_part.Name = 'newsafet'
     end)
 
-local mod = main:Button("AIM", function()
-local part = workspace.newsafet
-local camera = workspace.CurrentCamera
-while true do
-    camera.CFrame = CFrame.new(camera.CFrame.Position, part.Position)
-    task.wait()
+local mod = main:Button("TANK", function()
+_G.ADPt_enabled = not _G.ADPt_enabled
+while _G.ADPt_enabled do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
+wait(1)
 end
     end)
-
-local mod = main:Button("TANK", function()
-_G.ATANK_enabled = not _G.ATANK_enabled
-while _G.ATANK_enabled do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
-               wait(1)
-end
-end)
 
 local mod = main:Button("DPS", function()
 _G.ADPS_enabled = not _G.ADPS_enabled
@@ -123,16 +114,6 @@ while _G.ADPS_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 200.074066162109375, 934.8900146484375)
        wait(1)
  end
-end)
-
-local mod = main:Button("ANTY AFK", function()
-_G.Anchor_enabled = not _G.Anchor_enabled
-while _G.Anchor_enabled do
-game.Players.LocalPlayer.Character.Humanoid.Jump = true
-        wait(1)
-game:GetService("ReplicatedStorage").remotes.dash:FireServer()
-wait(1)
-        end
 end)
 
 local mod = main:Button("MASTERY", function()
