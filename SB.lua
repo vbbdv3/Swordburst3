@@ -113,8 +113,6 @@ local mod = main:Button("TANK", function()
 _G.ATANK_enabled = not _G.ATANK_enabled
 while _G.ATANK_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
-               wait(59)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 800.074066162109375, 934.8900146484375)
                wait(1)
 end
 end)
@@ -123,8 +121,6 @@ local mod = main:Button("DPS", function()
 _G.ADPS_enabled = not _G.ADPS_enabled
 while _G.ADPS_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 200.074066162109375, 934.8900146484375)
-       wait(59)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 800.074066162109375, 934.8900146484375)
        wait(1)
  end
 end)
