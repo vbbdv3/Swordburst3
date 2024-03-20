@@ -71,7 +71,7 @@ wait(0.1)
 end)
 
 local mod = main:Button("PTANK", function()
-local your_position = Vector3.new(1581.916748046875, 90.074066162109375, 934.8900146484375)
+local your_position = Vector3.new(1581.916748046875, 70.074066162109375, 934.8900146484375)
 local new_part = Instance.new('Part', workspace)
 new_part.Size = Vector3.new(4, 1, 4)
 new_part.CFrame = CFrame.new(your_position)
