@@ -160,33 +160,6 @@ wait(60)
     end
   end)
 
-local mod = main:Button("DMG 1 RESET", function()
-_G.Destrdd_enabled = not _G.Destrdd_enabled
-while _G.Destrdd_enabled do
-wait(240)
-        game.Players.LocalPlayer.Character.Torso:Destroy()
-wait(120)
-    end
-  end)
-
-local mod = main:Button("TANK 2 RESET", function()
-_G.Destrddd_enabled = not _G.Destrddd_enabled
-while _G.Destrddd_enabled do
-wait(180)
-        game.Players.LocalPlayer.Character.Torso:Destroy()
-wait(180)
-    end
-  end)
-
-local mod = main:Button("DMG 3 RESET", function()
-_G.Destrdddd_enabled = not _G.Destrdddd_enabled
-while _G.Destrdddd_enabled do
-wait(60)
-        game.Players.LocalPlayer.Character.Torso:Destroy()
-wait(300)
-    end
-  end)
-
 local mod = main:Button("FLAME", function()
 _G.abilityf_enabled = not _G.abilityf_enabled
 while _G.abilityf_enabled do
