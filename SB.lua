@@ -200,5 +200,3 @@ game:GetService("ReplicatedStorage").remotes.dash:FireServer()
 wait()
     end
   end)
-
-
