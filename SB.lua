@@ -70,41 +70,12 @@ wait(0.1)
       end
 end)
 
-local mod = main:Button("PTANK", function()
-local your_position = Vector3.new(1581.916748046875, 70.074066162109375, 934.8900146484375)
-local new_part = Instance.new('Part', workspace)
-new_part.Size = Vector3.new(4, 1, 4)
-new_part.CFrame = CFrame.new(your_position)
-new_part.Anchored = true
-new_part.Name = 'newANK'
-wait(1)
-local your_position = Vector3.new(1581.916748046875, 190.074066162109375, 934.8900146484375)
-local new_part = Instance.new('Part', workspace)
-new_part.Size = Vector3.new(4, 1, 4)
-new_part.CFrame = CFrame.new(your_position)
-new_part.Anchored = true
-new_part.Name = 'newDMG'
-wait(1)
-local your_position = Vector3.new(1581.916748046875, 790.074066162109375, 934.8900146484375)
-local new_part = Instance.new('Part', workspace)
-new_part.Size = Vector3.new(4, 1, 4)
-new_part.CFrame = CFrame.new(your_position)
-new_part.Anchored = true
-new_part.Name = 'newsafe'
-wait(1)
-local your_position = Vector3.new(1581.916748046875, 30.074066162109375, 934.8900146484375)
-local new_part = Instance.new('Part', workspace)
-new_part.Size = Vector3.new(4, 1, 4)
-new_part.CFrame = CFrame.new(your_position)
-new_part.Anchored = true
-new_part.Name = 'newsafet'
-    end)
-
 local mod = main:Button("TANK", function()
 _G.ADPt_enabled = not _G.ADPt_enabled
 while _G.ADPt_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
-wait(1)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 end
     end)
 
@@ -112,7 +83,8 @@ local mod = main:Button("DPS", function()
 _G.ADPS_enabled = not _G.ADPS_enabled
 while _G.ADPS_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 200.074066162109375, 934.8900146484375)
-       wait(1)
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
  end
 end)
 
