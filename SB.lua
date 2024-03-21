@@ -95,7 +95,6 @@ local args = {
     [1] = "ability",
     [2] = "z"
 }
-
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
 wait(0.1)
 local args = {
@@ -129,16 +128,6 @@ wait(0.1)
 end
 end)
 
-
-local mod = main:Button("TANK RESET", function()
-_G.Destrt_enabled = not _G.Destrt_enabled
-while _G.Destrt_enabled do
-wait(300)
-        game.Players.LocalPlayer.Character.Torso:Destroy()
-wait(60)
-    end
-  end)
-
 local mod = main:Button("FLAME", function()
 _G.abilityf_enabled = not _G.abilityf_enabled
 while _G.abilityf_enabled do
@@ -165,6 +154,13 @@ wait(0.1)
 local args = {
     [1] = "reinforcement",
     [2] = 1
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "ability",
+    [2] = "g"
 }
 
 game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
