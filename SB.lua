@@ -82,6 +82,20 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
   wait(0.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 50.074066162109375, 934.8900146484375)
+wait(0.5)
+local your_position = Vector3.new(0, 0, 0)
+local new_part = Instance.new('Part', workspace)
+new_part.Size = Vector3.new(1, 1, 1)
+new_part.CFrame = CFrame.new(your_position)
+new_part.Anchored = true
+new_part.Name = 'neZopo'
+wait(0.5)
+local part = workspace.neZopo
+local camera = workspace.CurrentCamera
+while true do
+    camera.CFrame = CFrame.new(camera.CFrame.Position, part.Position)
+    task.wait()
+end
 end)
 
 local mod = main:Button("MASTERY", function()
