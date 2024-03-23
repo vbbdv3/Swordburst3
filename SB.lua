@@ -6,7 +6,15 @@ _G.Chestbuy_enabled = not _G.Chestbuy_enabled
 while _G.Chestbuy_enabled do
 local args = {
     [1] = "buyChest",
-    [2] = "Cursed Chest"
+    [2] = "cashShop",
+    [3] = "Cursed Chest"
+}
+game:GetService("ReplicatedStorage").remotes.misc:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "buyChest",
+    [2] = "gemShop",
+    [3] = "Cursed Chest"
 }
 game:GetService("ReplicatedStorage").remotes.misc:FireServer(unpack(args))
 wait(0.1)
