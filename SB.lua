@@ -21,7 +21,7 @@ wait(0.1)
       end
 end)
 
-local mod = main:Button("Cursed Chest", function()
+local mod = main:Button("Open All Cursed Chest", function()
 _G.Chestbuyc_enabled = not _G.Chestbuyc_enabled
 while _G.Chestbuyc_enabled do
 local args = {
@@ -40,7 +40,7 @@ wait(0.1)
       end
 end)
 
-local mod = main:Button("Malevolent Chest", function()
+local mod = main:Button("Open All Malevolent Chest", function()
 _G.Chestbuym_enabled = not _G.Chestbuym_enabled
 while _G.Chestbuym_enabled do
 local args = {
@@ -59,7 +59,7 @@ wait(0.1)
       end
 end)
 
-local mod = main:Button("Disaster Chest", function()
+local mod = main:Button("Open All Disaster Chest", function()
 _G.Chestbuyd_enabled = not _G.Chestbuyd_enabled
 while _G.Chestbuyd_enabled do
 local args = {
@@ -78,13 +78,20 @@ wait(0.1)
       end
 end)
 
-local mod = main:Button("TANK", function()
+local mod = main:Button(" DUNGEON TANK START", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
+wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+wait(0.1)
+while true do
+game:GetService("ReplicatedStorage").remotes.dash:FireServer()
+    task.wait()
+end
     end)
 
-local mod = main:Button("DPS", function()
+local mod = main:Button("DUNGEON DPS START", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 200.074066162109375, 934.8900146484375)
       wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
@@ -102,11 +109,46 @@ local part = workspace.neZopo
 local camera = workspace.CurrentCamera
 while true do
     camera.CFrame = CFrame.new(camera.CFrame.Position, part.Position)
+wait(0.1)
+local args = {
+    [1] = "ability",
+    [2] = "c"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "ability",
+    [2] = "v"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "foresight"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "reinforcement",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "ability",
+    [2] = "g"
+}
+
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
     task.wait()
 end
 end)
 
-local mod = main:Button("MASTERY", function()
+local mod = main:Button("AUTO MASTERY CURSE", function()
 _G.ability_enabled = not _G.ability_enabled
 while _G.ability_enabled do
 local args = {
@@ -145,51 +187,3 @@ game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
 wait(0.1)
 end
 end)
-
-local mod = main:Button("FLAME", function()
-_G.abilityf_enabled = not _G.abilityf_enabled
-while _G.abilityf_enabled do
-local args = {
-    [1] = "ability",
-    [2] = "c"
-}
-
-game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)
-local args = {
-    [1] = "ability",
-    [2] = "v"
-}
-
-game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)
-local args = {
-    [1] = "foresight"
-}
-
-game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)
-local args = {
-    [1] = "reinforcement",
-    [2] = 1
-}
-
-game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)
-local args = {
-    [1] = "ability",
-    [2] = "g"
-}
-
-game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
-wait(0.1)
-    end
-  end)
-
-local mod = main:Button("TANK", function()
-_G.dash_enabled = not _G.dash_enabled
-while _G.dash_enabled do
-game:GetService("ReplicatedStorage").remotes.dash:FireServer()
-wait()
-    end
-  end)
