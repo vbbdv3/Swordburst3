@@ -78,6 +78,10 @@ wait(0.1)
       end
 end)
 
+local mod = main:Button("DUNGEON ANTI AFK", function()
+game.Players.LocalPlayer.PlayerScripts["Anti AFK"]:Destroy()
+end)
+
 local mod = main:Button(" DUNGEON TANK START", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.916748046875, 100.074066162109375, 934.8900146484375)
 wait(0.1)
