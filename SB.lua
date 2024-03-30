@@ -152,6 +152,37 @@ wait(0.1)
 end
 end)
 
+local mod = main:Button("AUTO MASTERY F", function()
+_G.abilityf_enabled = not _G.abilityf_enabled
+while _G.abilityf_enabled do
+local args = {
+    [1] = "fightingStyle",
+    [2] = "skill 1"
+}
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "fightingStyle",
+    [2] = "skill 2"
+}
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "fightingStyle",
+    [2] = "skill 3"
+}
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "fightingStyle",
+    [2] = "skill 4"
+}
+game:GetService("ReplicatedStorage").remotes.combat:FireServer(unpack(args))
+        end
+    end)
+
+
+
 local mod = main:Button("AUTO MASTERY CURSE", function()
 _G.ability_enabled = not _G.ability_enabled
 while _G.ability_enabled do
